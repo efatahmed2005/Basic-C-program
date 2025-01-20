@@ -9,8 +9,6 @@ int main()
     printf("Enter the column numbers of the two matrixs : ");
     scanf("%d", &column);
     int martixa[row][column];
-    //int martixb[row][column];
-
     int n = 1;
     for (int i = 0; i < row; i++)
     {
@@ -22,7 +20,7 @@ int main()
         }
     }
     printf("\nEntered Matrix : \n");
-      for (int i = 0; i < row; i++)
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < column; j++)
         {
@@ -30,12 +28,14 @@ int main()
         }
         printf("\n");
     }
-      printf("\nTranpose Matrix : \n");
-    for(int i=0;i<column;i++){
-        for (int j=0;j<row;j++){
-            printf("%d ",martixa[j][i]);
+    printf("\nTranpose Matrix : \n");
+    for (int i = 0; i < column; i++)
+    {
+        for (int j = 0; j < row; j++)
+        {
+            printf("%d ", martixa[j][i]);
         }
         printf("\n");
-      }
-        return 0;
+    }
+    return 0;
 }
