@@ -38,21 +38,15 @@ char option[][50] = {
     input= tolower(input);
 
     if(input==answer[i]){
-        printf("\033[1;33m");
         printf("correct\n\n");
         point++;
-        printf("\033[0m");
     }
     else
    { 
-    printf("\033[1;31m");
     printf("wrong\n\n");
-    printf("\033[0m");
     }
     }
 printf("\n\n");
-printf("\033[1;34m");
 printf("Your score : %d/%d\n\n\n",point,question_quantity);
-printf("\033[0m");
 return 0;
 }
