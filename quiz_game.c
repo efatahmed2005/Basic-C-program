@@ -29,23 +29,21 @@ char option[][50] = {
     {
         printf("%s\n",question[i]);
     
-    for(int j=(i*4);j<(i*4)+4;j++)
-    {
-        printf("%s\n",option[j]);
-    }
-    printf("\n\n");
-    scanf(" %c",&input);
-    input= tolower(input);
+        for(int j=(i*4);j<(i*4)+4;j++)
+        {
+          printf("%s\n",option[j]);
+        }
+      printf("\n\n");
+      scanf(" %c",&input);
+      input= tolower(input);
 
-    if(input==answer[i]){
+      if(input==answer[i])
+      {
         printf("correct\n\n");
         point++;
-    }
-    else
-   { 
-    printf("wrong\n\n");
-    }
-    }
+      }
+      else printf("wrong\n\n");
+   }
 printf("\n\n");
 printf("Your score : %d/%d\n\n\n",point,question_quantity);
 return 0;
