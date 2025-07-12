@@ -29,7 +29,8 @@ char option[][50] = {
     {
         printf("%s\n",question[i]);
     
-    for(int j=(i*4);j<(i*4)+4;j++){
+    for(int j=(i*4);j<(i*4)+4;j++)
+    {
         printf("%s\n",option[j]);
     }
     printf("\n\n");
